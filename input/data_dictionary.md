@@ -9,3 +9,6 @@
 ## Source
 Blake, T., C. Nosko, and S. Tadelis. 2014. "Consumer Heterogeneity and Paid Search
 Effectiveness: A Large-Scale Field Experiment." *Econometrica* 83(1): 155–74.
+
+
+

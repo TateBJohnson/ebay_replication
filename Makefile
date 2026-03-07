@@ -17,31 +17,3 @@ paper/paper.pdf: paper/paper.tex output/figures/figure_5_2.png output/figures/fi
 clean:
 	rm -f output/figures/*.png output/tables/*.tex paper/paper.pdf paper/paper.aux paper/paper.log
 
-
-# =============================
-# Task 2: Dependency Questions
-# =============================
-
-# 1. If code/preprocess.py is edited:
-#    Make will rebuild:
-#      - output/figures/figure_5_2.png
-#      - output/figures/figure_5_3.png
-#      - paper/paper.pdf (because it depends on the figures)
-#    Make will skip:
-#      - output/tables/did_table.tex (did_analysis.py did not change)
-
-# 2. If code/did_analysis.py is edited:
-#    Make will rebuild:
-#      - output/tables/did_table.tex
-#      - paper/paper.pdf (because it depends on the DID table)
-#    Make will skip:
-#      - output/figures/figure_5_2.png
-#      - output/figures/figure_5_3.png (preprocess.py did not change)
-
-# 3. If paper/paper.tex is edited:
-#    Make will rebuild:
-#      - paper/paper.pdf only
-#    Make will skip:
-#      - output/figures/figure_5_2.png
-#      - output/tables/did_table.tex
-#      - No Python scripts will run
